@@ -199,24 +199,26 @@
     </div>
     <!-- </section> -->
     <script>
-      // alert('발음 연습 시작!! (ง •̀_•́)ง');
-      // let href = ['01.html', '02.html', '03.html', '04.html', '05.html'];
-
-      // document.addEventListener('DOMContentLoaded', function () {
-      //   for (let i = 1; i <= href; i++) {
-      //     const button = document.querySelector('button[i]');
-      //     button.addEventListener('click', function (event) {
-      //       event.preventDefault;
-      //     });
-      //   }
-      // });
-
-      // const btn = document.querySelector('.btn');
-      // btn.addEventListener('click', clickHandler);
-      // function clickHandler() {}
-      // if (true) {
-      //   window.location.href = '01.html';
-      // }
+      document.addEventListener("DOMContentLoaded", () => {
+        console.log(data[1].id);
+        console.log(data[1].contents);
+        // alert('발음 연습 시작!! (ง •̀_•́)ง');
+        // let href = ['01.html', '02.html', '03.html', '04.html', '05.html'];
+        // document.addEventListener('DOMContentLoaded', function () {
+        //   for (let i = 1; i <= href; i++) {
+        //     const button = document.querySelector('button[i]');
+        //     button.addEventListener('click', function (event) {
+        //       event.preventDefault;
+        //     });
+        //   }
+        // });
+        // const btn = document.querySelector('.btn');
+        // btn.addEventListener('click', clickHandler);
+        // function clickHandler() {}
+        // if (true) {
+        //   window.location.href = '01.html';
+        // }
+      });
 
       function loadSection(number) {
         resetSection();
