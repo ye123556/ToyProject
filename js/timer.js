@@ -2,18 +2,19 @@ let minute = 0;
 let second = 0;
 let millisecond = 0;
 let interval; // 초기화 변수수
-const minutes = document.getElementById('minute');
-const seconds = document.getElementById('second');
-let milliseconds = document.getElementById('millisecond');
-const start = document.getElementById('start-btn');
-const stopB = document.getElementById('stop-btn');
-const reset = document.getElementById('reset-btn');
+const minutes = document.getElementById("minute");
+const seconds = document.getElementById("second");
+let milliseconds = document.getElementById("millisecond");
+const start = document.getElementById("start-btn");
+const stopB = document.getElementById("stop-btn");
+const reset = document.getElementById("reset-btn");
 
 // 시작버튼
 start.onclick = function () {
   if (start.disabled == false) {
     // 활성화
-    interval = setInterval(startClock, 10); // 1초마다 startClock함수를 실행할 것임
+    clearInterval(interval); // 타이머 반복x,
+    interval = setInterval(startClock, 10); // 1초마다 startClock함수를 실행이었는데 ms 으로 교체함!!
   } else {
     start.disabled = true; // 비활성화
   }
@@ -34,9 +35,9 @@ reset.onclick = function () {
   minute = 0;
   millisecond = 0;
   //html span 초기화
-  minutes.innerText = '00';
-  seconds.innerText = '00';
-  milliseconds.innerText = '00';
+  minutes.innerText = "00";
+  seconds.innerText = "00";
+  milliseconds.innerText = "00";
 };
 
 function startClock() {
@@ -58,15 +59,15 @@ function startClock() {
 
   // 성공성공ㅠㅠ!!!!
   millisecond++;
-  if (second < 10) seconds.innerText = '0' + second;
+  if (second < 10) seconds.innerText = "0" + second;
   else seconds.innerText = second;
 
-  if (minute < 10) minutes.innerText = '0' + minute;
+  if (minute < 10) minutes.innerText = "0" + minute;
   else minutes.innerText = minute;
 
   if (millisecond > 99) {
     second++;
-    seconds.innerText = '0' + second;
+    seconds.innerText = "0" + second;
     millisecond = 0;
   }
   if (second > 59 || millisecond > 99) {

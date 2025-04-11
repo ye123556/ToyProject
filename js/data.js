@@ -85,4 +85,3 @@ const data = [
     </section>`,
   },
 ];
-// section.style.background = 'white';

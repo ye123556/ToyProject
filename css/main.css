@@ -1,0 +1,140 @@
+header > p {
+  display: inline-block;
+}
+body {
+  background: url("/img/orange.jpg") left no-repeat fixed;
+  background-size: cover;
+  text-align: center;
+}
+/* #ok {background-size: contain;} */
+
+div {
+  background: white;
+  opacity: 0.8;
+  /* border-top-left-radius: 30px;
+  border-top-right-radius: 30px; */
+  border-radius: 30px;
+  width: 1048px; /* auto */
+  height: 320px;
+  margin: 50px 300px 650px;
+  box-shadow: 0px 0px 5px rgb(185, 179, 179);
+  position: relative;
+  /* margin-bottom: auto; */
+}
+
+#clock1 {
+  /* text-align: center;
+  background: white;
+  opacity: 1;
+  width: auto;
+  height: 160px; */
+
+  margin: 30px 200px;
+  /* box-shadow: 0px 0px 5px rgb(185, 179, 179); */
+  line-height: 40px;
+  text-align: center;
+  line-height: 50px;
+}
+
+h1 {
+  font-family: "Dongle";
+  font-size: 50px;
+  width: 100%;
+  height: 20px;
+  /* line-height: 100px; */
+}
+
+h2 {
+  color: rgb(255, 153, 0);
+}
+
+p {
+  font-family: "Dongle";
+  font-size: 30px;
+}
+.color {
+  width: 40px;
+  height: 40px;
+  border-radius: 55%;
+  color: #5a5459;
+  border: 0.5px solid #ccc0ca;
+  box-shadow: 0px -3px 3px #ffffff, 0px 3px 3px #cccccc;
+  background-color: rgb(233, 202, 117);
+}
+
+span {
+  font-size: 40px;
+  width: -100px;
+  line-height: 0px;
+  bottom: 100px;
+  font-family: "font-weight:700";
+  /* line-height: 50px; */
+}
+
+#millisecond {
+  font-size: 30px;
+}
+
+#start-btn,
+#stop-btn,
+#reset-btn {
+  top: 50px;
+}
+
+button {
+  padding: 5px 10px 5px 10px;
+  min-width: 50px;
+  height: auto;
+  box-sizing: border-box;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #5a5459;
+  box-shadow: 0px -3px 3px #ffffff, 0px 3px 3px #cccccc;
+  background-color: rgb(233, 202, 117);
+}
+
+/* @media screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    background: white;
+    opacity: 0.8;
+    border-radius: 30px;
+    width: 800px;
+    height: 700px;
+    margin: auto;
+  }
+} */
+section {
+  /*박스가 왜 계속 생기는 가....*/
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  width: 1048px;
+  /* width: auto; */
+  /* height: 600px; */
+  height: auto;
+  margin: 8px 300px 80px 300px;
+  box-shadow: 0px 0px 5px rgb(185, 179, 179);
+  position: relative;
+  text-align: center;
+  background-color: white;
+  opacity: 0.8;
+  position: absolute;
+  top: 341px;
+  /* border: 0.3px dotted #ccc0ca; */
+  /* padding-bottom: 20% */
+  margin-bottom: 20px;
+}
+
+/* 보여주다
+.form__container.show {
+  position: static;
+  opacity: 1;
+  visibility: visible;
+}
+
+.form__container {
+  display: block;
+  opacity: 1;
+  animation: formopen;
+  animation-duration: 0.5s;
+} */
